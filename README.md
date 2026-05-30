@@ -16,7 +16,14 @@ AudioMass now ships with a full multitrack mode -- layer multiple tracks, drag c
 1. please checkout this repo (or download it as zip)
 2. navigate to it through your favorite CLI, then access the ```src``` dir
 3. Run ```go run audiomass-server.go```  -  or if you do not have golang installed, you can use a simple python webserver by running ```python audiomass-server.py```
-4. Navigate to [http://localhost:5055/](http://localhost:5055/) and have fun!
+4. Navigate to [http://127.0.0.1:5055/](http://127.0.0.1:5055/) and have fun!
+
+## GitHub Pages
+
+This fork deploys the static app from the `src` directory with GitHub Actions.
+After Pages is enabled for GitHub Actions, the app is available at:
+
+[https://kkmin1.github.io/AudioMass/](https://kkmin1.github.io/AudioMass/)
 
 ...
 
@@ -28,4 +35,3 @@ If you want to build the all.build.js minified file for delivery/publishing this
 ```cat dist/wavesurfer.js dist/plugin/wavesurfer.regions.js oneup.js app.js keys.js contextmenu.js lufs.js ui-fx.js ui.js modal.js state.js engine.js actions.js drag.js recorder.js multitrack.js welcome.js fx-pg-eq.js fx-auto.js local.js id3.js lzma.js | uglifyjs -c -m -o all.build.js```
 
 Thanks!
-
